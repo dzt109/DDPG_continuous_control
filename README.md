@@ -62,16 +62,16 @@ The steps of the DDPG algorithm are listed below. ([[5]](https://www.renom.jp/no
 3. Get initial state ***s***
 4. Get action ***a*** = ***μ***(***s***)
 5. Take action ***a*** and get reward ***r*** with next state ***s′***
-6. Get the value of present state, **value**(***s***,***a***)=***Q***(***s***,***a***)
-7. Get target action ***a′***=***μ′***(***s′***) and target critic value of next state ***Q′***(***s′***,***a′***)
-8. Get value of current state from Bellman equation, **value**_**target**(***s***,***a***)=***r***+***Q′***(***s′***,***a′***)
-9. Get Loss 1/m ∑(**value**_**target**(***s′***,***a′***)−**value**(***s***,***a***))^2
+6. Get the value of present state, **value** ( ***s*** , ***a*** )= ***Q*** ( ***s*** , ***a*** )
+7. Get target action ***a′*** = ***μ′*** ( ***s′*** ) and target critic value of next state ***Q′*** ( ***s′*** , ***a′*** )
+8. Get value of current state from Bellman equation, **value** _ **target** (***s*** , ***a*** ) = ***r*** + ***Q′*** ( ***s′*** , ***a′*** )
+9. Get Loss 1/m ∑( **value** _ **target** ( ***s′*** , ***a′*** ) − **value** ( ***s*** , ***a*** ))^2
 10. Update Critic Network according to the loss
-11. Get Gradient of ***Q***(***s***,***a***) with respect to actor network ***μ***(***s***), ∂***Q***/∂***μ***(***s***)
-12. Get Gradient of ***μ***(***s***) with respect to weights of actor network ***θ** ****μ***, ∂***μ***(***s***)∂***θ***_***μ***
-13. Update Critic Network by maximizing the value of ∂***Q***/∂***μ***(***s***) ∂***μ***(***s***)/∂***θ_μ***
-14. Update target critic using the equation ***Q′***←***τQ***+(1−***τ***)***Q′***
-15. Update target actor using the equation ***μ′***←***τμ***+(1−***τ***)***μ′***
+11. Get Gradient of ***Q*** ( ***s*** , ***a***) with respect to actor network ***μ*** ( ***s*** ), ∂ ***Q*** /∂ ***μ*** ( ***s*** )
+12. Get Gradient of ***μ*** ( ***s***) with respect to weights of actor network ***θ*** ***μ***, ∂*** μ*** (***s*** )∂ ***θ*** _ ***μ***
+13. Update Critic Network by maximizing the value of ∂ ***Q*** /∂ ***μ*** ( ***s*** ) ∂ ***μ*** ( ***s*** )/∂ ***θ_μ***
+14. Update target critic using the equation ***Q′*** ← ***τQ*** + (1− ***τ*** ) ***Q′***
+15. Update target actor using the equation ***μ′*** ← ***τμ*** + (1− ***τ*** ) ***μ′***
 
 ### Hyperparameters
 
