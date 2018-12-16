@@ -6,7 +6,7 @@
 [image4]: DDPG2.png
 
 
-#Solution for the `Reacher` Environment using Deep Deterministic Policy Gradients (DDPG)
+# Solution for the `Reacher` Environment using Deep Deterministic Policy Gradients (DDPG)
 
 ![Trained Agent][image1]
 
