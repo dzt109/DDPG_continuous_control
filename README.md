@@ -150,7 +150,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 In this project, I solved the 20 agent model. The completed and debugged code, extended to 20 agents was run for a number of hyperparameters to train the model. The table below shows the various hyperparameters that were tested in different models.
 
-For alll the cases, the model ultimately converged to an average score (over the 20 agents) between 30 and 35 within about 10 to 47 episodes, so, the iterations terminated after 110 to 147 episodes. Fastest convergence was achieved in Case 7 (within 7 episodes.) The second best case, Case 3, included a larger `BUFFER_SIZE`, a non-zero `WEIGHT_DECAY`, and the largest CNN model for deep learning, among all the cases tried. This case was computationally less efficient than Case 7, and also comparatively underperformed.   
+For all the cases, the model ultimately converged to an average score (over the 20 agents) between 30 and 35 within about 10 to 47 episodes, so, the iterations terminated after 110 to 147 episodes. Fastest convergence was achieved in Case 7 (within 7 episodes.) The second best case, Case 3, included a larger `BUFFER_SIZE`, a non-zero `WEIGHT_DECAY`, and the largest CNN model for deep learning, among all the cases tried. This case was computationally less efficient than Case 7, and also comparatively underperformed.   
 
 
  
